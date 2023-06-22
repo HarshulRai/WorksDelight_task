@@ -23,7 +23,7 @@ const upload = multer({
             cb(null,"uploads")
         },
         filename:function(req,file,cb){
-            cb(null,file.fieldname+"_"+Date.now()+".mp4")
+            cb(null,file.fieldname+".mp4")
         }
     })
 }).single("user_file")
